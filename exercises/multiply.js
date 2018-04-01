@@ -9,9 +9,16 @@
  */
 
 // Your code :
-let number = [2,8];
-function multiply(number) {
-    return a * b;
+function multiply(a,b) {
+    let total = 0;
+    while (a) {       
+        if (a & 1) {
+            total += b;
+        }
+        a >>= 1;
+        b <<= 1;
+    }
+    return total;
 }
 
 //* Begin of tests
