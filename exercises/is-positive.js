@@ -7,6 +7,15 @@
  */
 
 // Your code:
+function isPositive(Number) {
+    if (Number > 0 
+    ) {
+        return  true;
+    } else {
+        return false;
+    }
+
+}
 
 
 //* Begin of tests
@@ -21,3 +30,4 @@ assert.strictEqual(isPositive(-0.7), false)
 assert.strictEqual(isPositive(-787823), false)
 assert.strictEqual(isPositive(0), false)
 // End of tests */
+

@@ -9,6 +9,10 @@
  */
 
 // Your code :
+let number = [2,8];
+function multiply(number) {
+    return a * b;
+}
 
 //* Begin of tests
 const assert = require('assert')
