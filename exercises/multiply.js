@@ -9,16 +9,15 @@
  */
 
 // Your code :
-function multiply(a,b) {
-    let total = 0;
-    while (a) {       
-        if (a & 1) {
-            total += b;
-        }
-        a >>= 1;
-        b <<= 1;
-    }
-    return total;
+function multiply(a, b) {
+    let z = 0;
+    if (b < 0) {
+        for (let i = 0; i < -b; i++) z += a;
+        z= -z;
+    } else {
+        for (let i = 0; i < b; i++) z += a;
+    };
+    return z;
 }
 
 //* Begin of tests
