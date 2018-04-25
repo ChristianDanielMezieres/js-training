@@ -9,16 +9,13 @@
  */
 
 // Your code :
-function multiply(a,b) {
-    let total = 0;
-    while (a) {       
-        if (a & 1) {
-            total += b;
-        }
-        a >>= 1;
-        b <<= 1;
+function multiply(a, b) {
+    if (a == 0 || b == 0) {
+        return 0;
+    } else if (b > 0) {
+        return a + multiply(a, b - 1);
     }
-    return total;
+    return -multiply(a, -b);
 }
 
 //* Begin of tests
